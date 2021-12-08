@@ -1,0 +1,27 @@
+{
+  "name": "tcc_ecommerce",
+  "version": "1.0.0",
+  "description": "Projeto de TCC de cadastro de clientes e produtos em um ecommerce",
+  "main": "API/src/app.js",
+  "scripts": {
+    "start": "node API/src/app.js",
+    "init-db": "node API/src/db/addUser.js"
+  },
+  "author": "Guilherme Augusto Deitos Alves",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "latest": "^0.2.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.2",
+    "node-fetch": "^3.1.0",
+    "nodemon": "^2.0.14",
+    "requirejs": "^2.3.6",
+    "sequelize": "^6.8.0",
+    "sqlite": "^4.0.23",
+    "sqlite3": "^5.0.2"
+  }
+}
