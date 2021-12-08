@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Produtos - WaggnersCommerce</title>
+  <link rel="stylesheet" href="../public/styles/global.css">
+  <link rel="stylesheet" href="../public/styles/cad-produto.css">
+  
+</head>
+<body>
+  <div div="container" class="container">
+    <header>
+      <a href="./index.html" class="voltar"><img src="../assets/Arrow 4.svg" alt="Imagem da logo" id="logo"></a>
+      
+      <h1>Cadastro de produtos</h1>
+
+    </header>
+    <div class="main">
+
+        <form class="form" id="form-cadastro">
+          <label for="nome">Nome do produto:</label>
+          <input type="text" id="nome-produto" class="produto" name="nome_produto" required>
+          <label for="descricao">Descrição do produto:</label>
+          <input type="text" id="descricao-produto" class="produto" name="descricao_produto">
+          <label for="">Marca do produto</label>
+          <input list="marcas" id="marca-produto" class="produto" name="marca_produto">
+          <datalist id="marcas">
+            <option value="Nike">
+            <option value="Adidas">
+            <option value="Puma">
+            <option value="Vans">
+            <option value="Converse">
+            <option value="Fila">
+            <option value="Lacoste">
+            <option value="Calvin Klein">
+            <option value="Gucci">
+            <option value="Louis Vuitton">
+            <option value="Prada">
+            <option value="Lacoste">
+          </datalist>
+          <label for="preco">Preço do produto:</label>
+          <input type="number" id="preco-produto" class="produto" name="preco_produto" step="0.01" required>
+          <label for="quantidade">Quantidade do produto:</label>
+          <input type="number" id="quantidade-produto" class="produto" name="quantidade_produto" required>
+          <label for="categoria">Categoria do produto:</label>
+          <input list="categorias" id="categoria-produto" class="produto" name="categoria_produto">
+          <datalist id="categorias">
+            <option value="Calçados">
+            <option value="Acessórios">
+            <option value="Roupas Masculinas">
+            <option value="Roupas Femininas">
+          </datalist>
+          <label for="imagem">Imagem do produto</label>
+          
+          <input type="text" id="imagem-produto" class="produto" name="imagem_produto" placeholder="Informar o nome da imagem e a extensão dela" required>
+
+          <button type="button" id="cadastrar-produto">Cadastrar Produto</button>
+        </form>
+      <script src="../js/postProdutos.js"></script>
+
+  
+    </div>
+  </div>
+
+</body>
+</html>

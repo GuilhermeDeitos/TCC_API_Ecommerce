@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - WaggnersCommerce</title> <!--Titulo do site-->
+
+  <link rel="stylesheet" href="/FrontEnd/public/styles/login.css"> <!--link do css-->
+
+  <script src="https://kit.fontawesome.com/dba175805d.js" crossorigin="anonymous"></script> <!--script do site onde foi pego os icones-->
+  
+
+  
+</head>
+<body> 
+  <div class="container"> <!--div container onde todos os outros itens/elementos vão estar dentro-->
+
+    <div class="content first-content"><!--inicio do First Content-->
+      <div class="first-column"> <!--Inicio da primeira coluna-->
+        <h2 class="title title-primary">Bem vindo de volta</h2> <!-- titulo primario do site -->
+        <p class="description description-primary"> <!-- descrição primaria do site -->
+          Para entrar em sua conta clique no botão abaixo e <br> <!-- tag br para pular linha -->
+          por favor, logue com suas informações pessoais.
+        </p>
+        <button id="sign-in" class="btn btn-primary">Logar</button> <!-- botão sign in para "logar" que será utilizado para a animação/dinamização com JS-->
+      </div><!--fim da primeira coluna-->
+      <div class="second-column" > <!--Inicio da segunda coluna-->
+        <h2 class="title title-second">Criar Conta</h2> <!-- titulo secundario -->
+
+        <p class="description description-second">Preencha os campos abaixo: </p>
+        <form class="form" id="form-cadastro"> <!--Inicio Form-->
+          <label class ="label-input" for="nome">
+            <i class="far fa-user icon-modify"></i> <!-- icon de user -->
+            <input type="text" placeholder="Nome:" id="nome" name="nome" required>
+          </label>
+          <label class ="label-input" for="email">
+            <i class="far fa-envelope icon-modify"></i>
+            <input type="email" placeholder="Email:" id="email" name="email" required>
+          </label>
+          <label class ="label-input" for="senha">
+            <i class="fas fa-lock icon-modify"></i>
+            <input type="password" placeholder="Senha:" id="senha" name="senha" required>
+          </label>
+
+          <button type="submit" class="btn btn-second" id="cadastrar-usuario">Cadastrar</button> <!-- botão de Sign up para "cadastrar" -->
+          <a href="./index.html" class="back">Voltar ao site principal</a>
+        </form> <!--FIm Form-->
+      </div><!--fim da segunda coluna-->
+      <script src="../js/postUsuarios.js"></script>
+
+    </div><!--fim do First Content-->
+
+    <div class="content second-content"> <!--inicio do second Content-->
+      <!-- Bem semelhante ao primeiro conteudo -->
+      <div class="first-column"> <!--Inicio da primeira coluna-->
+        <h2 class="title  title-primary">Olá amigo</h2>
+        <p class="description description-primary">
+          Para criar uma conta clique no botão abaixo e <br>
+          por favor, se cadastre com suas informações pessoais.
+        </p>
+        <button id="sign-up" class="btn btn-primary">Cadastrar</button> <!--botão de cadastrar que será utilizado para a animação/dinamização com JS-->
+      </div><!--fim da primeira coluna-->
+      <div class="second-column"> <!--Inicio da segunda coluna-->
+        <h2 class="title  title-second">Logue em sua conta</h2>
+        <p class="description description-second">Preencha os campos abaixo com suas informações </p>
+        <form class="form"> <!--Inicio Form-->
+          <label class ="label-input" for="">
+            <i class="far fa-envelope icon-modify"></i>
+            <input type="email" placeholder="Email:" required>
+          </label>
+          <label class ="label-input" for="">
+            <i class="fas fa-lock icon-modify"></i>
+            <input type="password" placeholder="Senha:" required>
+          </label>
+          <a class="password"href="#">Esqueci minha senha</a> <!--link para caso esqueça a senha-->
+          <button class="btn btn-second" id="a">Logar</button> <!--botão de logar-->
+          <a href="./index.html" class="back">Voltar ao site principal</a>
+        </form> <!--FIm Form-->
+      </div><!--fim da segunda coluna-->
+    </div><!--fim do second Content-->
+  </div>
+  <script src="/FrontEnd/public/scripts/signin-signup.js"></script> <!--script que vai mudar o nome do body permitindo aquela animação -->
+
+  
+</body>
+</html>
