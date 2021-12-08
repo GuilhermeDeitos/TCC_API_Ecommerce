@@ -1,0 +1,45 @@
+header a img{
+    width: 1rem;
+}
+header h1{
+    margin:auto;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #2c3e50;
+    font-family: 'Poppins', sans-serif;
+  
+  }
+
+
+#form-atualizar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main h3{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+#atualizar-produto{
+    margin-top: 2rem;
+
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+ 
+      
+}
+
+#atualizar-produto:hover{
+    transition: 0.5s;
+    border: 1px solid var(--blue);
+    background-color:transparent;
+    color: var(--black);
+}

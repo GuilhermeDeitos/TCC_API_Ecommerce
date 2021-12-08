@@ -1,0 +1,157 @@
+*{
+  margin:0;
+  padding: 0;
+  border:none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html{
+  --black:#0D114F;
+  --blue:#3485FF;
+  --white:#FAFAFA;
+  --red:#E83F5B;
+  --light-blue:#E0ECFF;
+  --background:#FBFCFF;
+  --overlay:#040911;
+  --icons-details:#A5B0C1;
+
+  --grey-dark:#4D5E77;
+  --grey-blue:#A1B2CD;
+  --grey-light:#E5EAF1;
+  --grey-medium:#eaecf2;
+
+
+  /* 1rem = 16px(User Agent), ajuda na responsividade do site = 100% (User Agent)*/
+  font-size: 62.5%;/* 10px */
+}
+body{
+  height: 100vh; /* a altura fica de onde começa a tela até onde termina*/
+  background-color: var(--background);
+  display: flex;
+}
+
+body,button,input,textarea{
+  
+  font-size: clamp(14px, 1.6rem, 2vw); /* clamp = intervalo de tamanho, clamp(tamanho minimo, tamanho padrão, a largura maxima) */
+
+  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Poppins', sans-serif;*/
+  
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+/* "inicializar CSS"  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Definir a fonte padrão de todo o "site"*/
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color:#ecf0f1;
+}
+
+
+.container{
+  display: flex; /* Definir o display como flex para deixar os dois conteúdos lado a lado*/
+  justify-content: center; /* centralizar esse conteúdo, alinhar eles entre si dentro do container */
+  align-items: center;  /* alinhar os itens para o centro */
+  flex-direction: column; /* Definir a direção como coluna, para deixar os itens um ao lado do outro */
+  width: 100%;
+
+  margin: auto;
+
+
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+#back{
+  width: 5rem;
+}
+
+.main{
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  max-width: 96rem;
+  width: 100%;
+  border-radius: .4rem;
+  padding: 3rem;
+  
+
+}
+.main label{
+  font-size: 2rem;
+  padding: 1rem;   
+}
+
+.main input{
+  font-size: 2rem;
+  padding: 1.4rem;
+  width: 80%;
+  text-align: center;
+
+}
+
+.sr-only{ /*esconder o label, para acessibilidade sem atrapalhar os elementos do site*/
+  position: absolute; /*Para de respeitar os elementos, podendo mover a vontade*/
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/*------------- Input nd buttons -------------*/
+
+button,input, .button{
+  border-radius: 0.8rem;
+  height: 5rem;
+}
+
+button, .button{
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  line-height: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--blue);
+  color: var(--white);
+
+  transition: filter 0.3s;
+
+  cursor: pointer;
+}
+
+button:hover, .button:hover{
+  filter: brightness(1.2);
+}
+
+
+/* Header */
+.container header{
+  width: 80%;
+  margin:3.5rem auto;
+  text-align: center;
+}
+.container header img{
+  width: 7rem;
+ 
+
+}

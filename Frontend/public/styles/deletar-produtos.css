@@ -1,0 +1,39 @@
+header h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#form-apagar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+#btn_remover{
+    margin-top: 2rem;
+
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+ 
+      
+}
+
+#btn_remover:hover{
+    transition: 0.5s;
+    border: 1px solid var(--blue);
+    background-color:transparent;
+    color: var(--black);
+}

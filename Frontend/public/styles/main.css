@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+
+body{
+    background-color: #f5f5f5;
+}
+a{
+    text-decoration: none;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000;
+}
+
+ header h1{
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: #2b72dc;
+    margin: 0;
+    padding: 0;
+ }
+
+ header a{
+        color: #000;
+        text-decoration: none;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+
+ }
+
+ header a img{
+     width: 2rem;
+
+ }
+
+
+.container{
+    width: 100vw;
+	margin: 0 auto;
+	display: flex;
+    
+
+    
+    
+}
+
+.main{
+    width: 96rem;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.produtos{
+
+    display: flex;
+    
+    background: rgba( 255, 255, 255, 0 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px ) saturate(180%);
+    border-radius: 1rem;
+    border: 1px solid rgba(109, 107, 107, 0.18);
+    margin: 5rem;
+    padding: 2rem;
+    
+    
+ 
+}
+
+
+.produto-img{
+    display: flex;
+    justify-content:center;
+    padding: 2rem;
+ 
+    
+
+
+}
+
+.produto-img img{
+    width: 20rem;
+
+    box-shadow: 0 1px 3px 0 rgba(65, 61, 61, 0.37);
+}
+
+.produto-id{
+    display: flex;
+    align-items:flex-end;
+    font-size: 1rem;
+    font-family: "Roboto",sans-serif;
+    font-weight: 200;
+    color: #9b9b9b;
+}
+
+.produto-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+.produto-info h2{
+    display: flex;
+    justify-content: center;
+    border-bottom: 0.1rem solid rgba(17, 25, 40, 0.25);
+    border-width: 100%;
+    width: 35rem;
+    margin-top: 1rem;
+    font-family: 'Poppins',sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.produto-info p{
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Roboto',sans-serif;
+    margin: .5rem;
+
+}
+
+.produto-info  #preco{
+
+    font-size: 2rem;
+    font-weight: 700;
+}
+.produto-botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+a{
+    border-radius: 0.8rem;
+    padding: .5rem 1.5rem;
+    height:3rem;
+    width: 15rem;
+    margin: 1rem;
+    color: #fff;
+
+}
+button{
+    border: none;
+    background-color: transparent;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    line-height: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+
+}
+
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn_editar{
+    background-color: #3485FF;
+    
+}
+.btn_editar:hover{
+    transition: 0.5s;
+    border: 1px solid #3485FF;
+    background-color:transparent;
+    color: #000;
+
+}
+.btn_remover{
+    background: #E83F5B;
+
+}
+
+.btn_remover:hover{
+    transition: 0.5s;
+    border: 1px solid #E83F5B;
+    background-color:transparent;
+    color: #000;
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    border-top: 1px solid #000;
+}
+
+footer li{
+    list-style-type:none;
+}
+

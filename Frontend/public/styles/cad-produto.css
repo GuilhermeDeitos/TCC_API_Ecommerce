@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+/* "inicializar CSS"  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Definir a fonte padrão de todo o "site"*/
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color:#ecf0f1;
+}
+
+
+.container{
+  display: flex; /* Definir o display como flex para deixar os dois conteúdos lado a lado*/
+  justify-content: center; /* centralizar esse conteúdo, alinhar eles entre si dentro do container */
+  align-items: center;  /* alinhar os itens para o centro */
+  flex-direction: column; /* Definir a direção como coluna, para deixar os itens um ao lado do outro */
+  height: 90vh; /*Definir a altura em 100 view height*/
+
+}
+
+.main{
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  max-width: 96rem;
+  width: 100%;
+  border-radius: .4rem;
+  padding: 3rem;
+  
+
+}
+
+.main #form-cadastro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1{
+  margin:auto;
+  font-size: 5.6rem;
+  font-weight: 700;
+  color: #2c3e50;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+#back{
+  width: 5rem;
+}
+
+.main label{
+  font-size: 2rem;
+  padding: 1rem;   
+}
+
+.main input{
+  font-size: 2rem;
+  padding: 1.4rem;
+  width: 80%;
+  text-align: center;
+
+}
+.main #imagem-produto{
+  margin-bottom: 2rem;
+}
+.main #imagem-produto::placeholder{
+  color: #878484;
+  font-size: 2rem;
+}
+
+
+.main #cadastrar-produto{
+  padding: 3rem 1.5rem;
+  font-size: 2rem;
+}
+
+.main #cadastrar-produto:hover{
+  transition: 0.5s;
+    border: 1px solid var(--blue);
+    background-color:transparent;
+    color: var(--black);
+}

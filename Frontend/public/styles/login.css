@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+/* "inicializar CSS"  */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Definir a fonte padrão de todo o "site"*/
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+  display: flex; /* Definir o display como flex para deixar os dois conteúdos lado a lado*/
+  justify-content: center; /* centralizar esse conteúdo, alinhar eles entre si dentro do container */
+  align-items: center;  /* alinhar os itens para o centro */
+  height: 100vh; /*Definir a altura em 100 view height*/
+  background-color: #ecf0f1; /* Mudar a cor do fundo*/
+}
+
+
+.content{
+  background-color: white; /*Cor do fundo dos conteudos*/
+  border-radius: 15px; /* deixar meio redondinho nas pontas/bordas*/
+  width: 960px; /*definir a largura do conteudo*/
+  height: 50%; /*definir a altura do conteudo em 50% do total da tela*/
+  justify-content: space-between; /*deixar os itens com um espaçamento igual*/
+  align-items: center; /* alinhar os itens ao centro */
+  position: relative; /* definir a posição dos itens relativamente aos outros itens*/
+}
+
+.content::before{ /*pseudo-elemento before pra adicionar algo antes do conteudo*/
+  content: "";
+  position: absolute; 
+  background-color: #A27AFF; /*Cor de fundo*/
+  width: 40%; /* largura desse "bloco"*/
+  height: 100%; /* altura desse "bloco"*/
+  border-top-left-radius: 15px; /* deixar a borda do topo esquerdo redondinho*/
+  border-bottom-left-radius: 15px; /* deixar a borda de baixo esquerdo redondinho*/
+
+}
+
+.first-content{
+  display: flex; /*deixar o primeiro conteudo ao lado do segundo*/
+}
+
+.first-content .second-column{
+  z-index: 11; /*deixar a segunda coluna do primeiro conteudo na "camada" 11, sobrepondo outros que estejam atrás*/
+}
+.title{
+  font-size: 28px; /*tamanho da fonte do titulo*/
+  font-weight: bold; /*Estilo da fonte do titulo*/
+  text-transform: capitalize; /*deixar as primeiras letras maiusculas do titulo*/
+}
+
+.title-primary{
+  color: #fff; /* Deixar o titulo primario da cor branca*/
+}
+.title-second{
+  color:#A27AFF; /* Deixar o titulo secundario da cor desejada(roxa)*/
+}
+.description{
+  font-size: 14px; /* tamanho da fonte da descrição*/
+  font-weight: 300px;  
+  color: #fff; /*setar a cor da descrição*/
+  line-height: 30px; /*altura da linha para dar espaçamento*/
+}
+
+.description-primary{
+  color: #fff; /*cor da descrição primaria*/
+}
+
+.description-second{
+  color: #999999; /*cor da descrição secundaria*/
+}
+
+.btn{
+  border-radius: 15px; /*Deixar redondinho*/
+  text-transform: uppercase; /*transformar todas as letras em maiusculas*/
+  color: #fff; /*cor da letra do botão*/
+  font-size: 10px; /*tamanho da letra do botão*/
+  padding: 10px 50px; /* distancia das letras do topo e laterais respectivamente */
+  width: 150px; /*largura do botão*/
+  align-self: center; /*fazer o botão se alinhar ao centro baseado nos outros itens*/
+  border: none; /*deixar sem borda*/
+  margin-top: 1rem; /*dar uma distancia de 1rem do elemento acima dele*/
+}
+
+.btn-primary{
+  background-color: transparent; /*deixar o fundo transparente*/
+  border: 1px solid #fff; /* borda de 1px branca*/
+  cursor: pointer; /*fazer o cursor mudar ao entrar em contato com o botão*/
+  font-weight: bold; /*deixar a fonte em negrito*/
+  transition: background-color .5s; /*colocar uma transição de 0.5 seg para dar um efeito massa*/
+}
+
+.btn-primary:hover{ /*pseudo elemento que faz algo caso passe o cursor por cima do item*/
+  background-color: #fff; 
+  color: #A27AFF;
+  
+}
+
+.btn-second{
+  background-color: #A27AFF;
+  border: 1px solid #A27AFF;
+  transition: background-color 0.5s;
+}
+
+.btn-second:hover{ /*pseudo elemento que faz algo caso passe o cursor por cima do item*/
+  background-color: #fff;
+  border-color: 1px solid #A27AFF;
+  color: #A27AFF;
+}
+.back{
+  margin: .5rem;
+
+  color: #999999;
+  font-size: 14px;
+  text-align: center;
+}
+.first-column{
+  text-align: center; /*Alinhar o texto da coluna ao centro*/
+  width: 40%;
+  z-index: 10; /*"camada" da primeira coluna*/
+}
+.second-column{
+  width: 60%;
+  text-align: center;
+  display: flex; /*deixar a segunda coluna lado a lado com a primeira*/
+  flex-direction: column; /*deixar os itens em direção de coluna(de cima para baixo)*/
+  align-items: center; /* alinhar os itens ao centro */
+  
+}
+.link-social-media .item-social-media{
+  transition: background-color 0.5s;
+}
+.social-media{
+  margin: 1rem 0; /* colocar uma margem em torno das "redes sociais" */
+}
+.list-social-media{
+  display: flex; /* deixar os itens alinhados lado a lado */
+  list-style-type: none; /* retirar aquelas bolinhas que tem nas listas */
+}
+.item-social-media{
+  border: 1px solid #04BF58; /* colocar uma borda em torno das "redes sociais"com a cor desejada */
+  border-radius: 50%; /*circunferencia da borda*/
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  text-align: center; /*alinhar as imagens com os links ao centro da margem*/
+  color: #04BF58; /*cor da imagem*/
+
+}
+.link-social-media:not(:first-child){ /*pseudo elemento que nos permite mudar todos menos o primeiro elemento*/
+  margin-left: 10px; /* fazer os elementos irem 10px a esquerda */
+}
+
+.link-social-media:hover .item-social-media{ /*pseudo elemento que faz algo caso passe o cursor por cima do item*/
+  background-color: #A27AFF;
+  color: #fff;
+  border-color: #9b74f5;
+}
+.form{
+  display: flex; /*deixar os elementos lado a lado*/
+  flex-direction: column; /*mudar a direção para ao invés de lado a lado um acima do outro, como uma coluna*/
+  width: 55%;
+  
+}
+.form input{
+  height: 45px;
+  width: 100%;
+  border: none; /*tirar as bordas dos inputs*/
+  background-color: #ecf0f1;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif; /*mudar a fonte que aparece quando o usuario digita algo*/
+  padding: 10px;/*distancia do input das beiradas*/
+  
+
+}
+
+input:-webkit-autofill{ /* pseudo elemento usado para que caso a senha seja salva não fique com aquele efeito de fundo azul */
+  -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+.label-input{
+  background-color: #ecf0f1; /*mudar a cor dos icons no label*/
+  display: flex; /*alinhar eles com o input*/
+  align-items: center; /*centralizar*/
+  margin: 5px; /*margem para não ficar colado na beirada*/
+
+}
+
+.icon-modify{
+  color:#999999;
+  padding: 5px;
+}
+
+/* Second Content*/ 
+/*Coisas do segundo conteudo(Sign in)*/
+.second-content{
+  position: absolute; 
+  display: flex;/*deixar eles lado a lado assim como fiz com o primeiro*/
+}
+
+.second-content .first-column{ 
+  order: 2;/*para facilitar usei isso para inverter a ordem que vai aparecer as colunas, não precisando criar outra classe*/
+  z-index: -1; 
+}
+
+.second-content .second-column{
+  order: 1;/*para facilitar usei isso para inverter a ordem que vai aparecer as colunas, não precisando criar outra classe*/
+  z-index: -1;
+}
+
+.password{
+  color: #999999;
+  font-size: 14px;
+  text-align: center;
+}
+.password::first-letter{ /*Pseudo elemento para fazer alterações apenas na primeira letra*/
+  text-transform: capitalize; /*deixar a primeira letra maiuscula*/
+}
+
+
+.sign-in-js .first-content .first-column,
+.sign-in-js .first-content .second-column{  /*mudar as "camadas" da primeira e segunda coluna do primeiro conteudo, para deixar o segundo conteudo sobrepor e não se misturar*/
+  z-index: -1;
+}
+
+.sign-in-js .second-content .second-column{/*mudar as "camadas" da segunda coluna do segundo conteudo, isso foi necessário para fazer uma animação */
+  z-index: 11;
+}
+.sign-in-js .second-content .first-column{/* mudar as "camadas" da primeira coluna do segundo conteudo, para uma animação*/
+  z-index: 13;
+}
+
+.sign-in-js .content::before{/*após essa mudança de lado ajustar algumas coisas*/
+  left: 60%; /*o quão pra direita  ficar o conteudo*/
+  border-top-left-radius: 0; /*mexer na borda(arredondamento)*/
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;/*o quão arredondado eu quero que fique a beirada*/
+  animation: slidein 1.3s; /*animação e a duração*/
+  z-index: 12; /*camada desse conteudo*/
+}
+
+.sign-up-js .content::before{
+  animation: slideout 2s; /*animação e duração*/
+  z-index: 12; /*camada*/
+}
+
+
+.sign-up-js .first-content .second-column{/*Semelhante a o que fazia o sign-in é feito aqui*/
+  z-index: 11; 
+}
+
+.sign-up-js .second-content .first-column,
+.sign-up-js .second-content .second-column{/*Semelhante a o que fazia o sign-in é feito aqui*/
+  z-index: -1;
+}
+
+.sign-up-js .content::before{ /*Semelhante a o que fazia o sign-in é feito aqui, so que dessa vez o lado direito pois é o lado oposto*/
+  right: 60%;
+
+}
+.sign-up-js .first-content .first-column{ /*Semelhante a o que fazia o sign-in é feito aqui*/
+  z-index: 13;
+
+}
+
+.sign-in-js .first-content .second-column{
+  z-index: -1;/*camada*/
+  position: relative;/*posição relativa ao outro lado(por causa do display)*/
+  animation: deslocamentoEsq .3s;/*animação de deslocamento e duração*/
+}
+
+.sign-up-js .second-content .second-column{
+  z-index: -1; /*camada*/
+  position: relative; /*posição relativa ao outro lado(por causa do display)*/
+  animation: deslocamentoDir 0.3s; /*animação de deslocamento e duração*/
+}
+/*animação de deslocamento*/
+@keyframes deslocamentoEsq {
+  from{ /*de onde vai*/
+    left: 0;
+    opacity: 1; /*opacidade para dar um efeito de transparencia*/
+    z-index: 12; /*camada acima do segundo conteudo para sobrepor*/
+  }
+  25%{ /*o que ele vai fazer em 25% do percurso*/
+    left: -80px;
+    opacity: .5px;
+  }
+  50%{ /*o que ele vai fazer em 50% do percurso*/
+    left: -100px;
+    opacity: .3px;
+  }
+  to{ /*para onde vai*/
+    left: -110px;
+    opacity: 0; /*opacidade 0 pois o conteudo deve aparecer*/
+    z-index: -1;/*camada abaixo do segundo conteudo para não sobrepor*/
+  }
+}
+ /*Aqui é bem semelhante so que o lado oposto*/
+@keyframes deslocamentoDir {
+  from{
+    left: 0px;
+    z-index: 12;
+    opacity: 1;
+  }
+  25%{
+    left: 80px;
+    opacity: 0.5;
+  }
+  50%{
+    left: 100px;
+    opacity: 0.3;
+  }
+  to{
+    left: 110px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+/*Animação de slidein*/
+
+@keyframes  slidein{
+
+  from{
+    left: 0;
+    width: 40%;
+
+  }
+
+  25%{
+    left: 10%;
+    width: 50%;
+  }
+
+
+  50%{
+    left: 25%;
+    width: 60%;
+  }
+
+  75%{
+    left: 45%;
+    width: 50%;
+  }
+
+  to{
+    left: 60%;
+    width: 40%;
+  }
+  
+}
+/*Animação de slideout*/
+@keyframes  slideout{
+
+  from{
+      left: 60%;
+      width: 40%;
+  }
+
+  25%{
+    left: 45%;
+    width: 50%;
+    
+  }
+
+  50%{
+    left: 25%;
+
+    width: 60%;
+  }
+
+  75%{
+    left: 10%;
+    width: 50%;
+  }
+
+  
+  to{
+    left: 0;
+    width: 40%;
+
+  }
+  
+}
